@@ -24,13 +24,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:columnCount="3"
-        android:rowCount="2"
+        android:rowCount="7"
         android:layout_below="@+id/friendsLogo"
         android:layout_alignRight="@+id/friendsLogo"
         android:layout_alignEnd="@+id/friendsLogo"
         android:layout_marginRight="43dp"
         android:layout_marginEnd="43dp"
-        android:layout_marginTop="57dp">
+        android:layout_marginTop="57dp"
+        android:longClickable="false">
 
         <ImageView
             android:layout_width="100dp"
@@ -68,6 +69,7 @@
             android:layout_column="2"
             android:src="@drawable/jim"
             android:padding="5sp" />
+
     </GridLayout>
 
 </RelativeLayout>
