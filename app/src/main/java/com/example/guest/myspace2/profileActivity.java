@@ -14,6 +14,7 @@ import android.widget.Button;
 public class profileActivity extends AppCompatActivity {
 
     private Button friendsButton;
+    private Button postsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class profileActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         friendsButton = (Button)findViewById(R.id.friendsButton);
+        postsButton = (Button)findViewById(R.id.postsButton);
 
         friendsButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,10 +32,22 @@ public class profileActivity extends AppCompatActivity {
                 seeFriends();
             }
         });
+
+        postsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                seePosts();
+            }
+        });
     }
 
     private void seeFriends() {
         Intent intent = new Intent(this, FriendsActivity.class);
+        startActivity(intent);
+    }
+
+    private void seePosts() {
+        Intent intent = new Intent(this, postsActivity.class);
         startActivity(intent);
     }
 

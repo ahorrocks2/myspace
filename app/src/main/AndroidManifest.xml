@@ -27,6 +27,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.guest.myspace2.profileActivity" />
         </activity>
+        <activity
+            android:name=".postsActivity"
+            android:label="@string/title_activity_posts"
+            android:parentActivityName=".profileActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guest.myspace2.profileActivity" />
+        </activity>
     </application>
 
 </manifest>
